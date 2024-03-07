@@ -29,7 +29,8 @@
     animation: 10s slide infinite linear;
 }
 
-.logosslide img{
+.logosslide svg{
+    height: 3%;
     width: 3%;
     margin: 0 13rem
 }
