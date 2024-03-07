@@ -1,0 +1,65 @@
+.buttonrorate {
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonrorate > a{
+    padding: 1rem;
+    box-shadow: 0px 0 20px 0px #979393;
+    border-radius: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttonrorate h3{
+    color: rgb(255, 255, 255);
+}
+
+button .icon {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button .icon span {
+    border-radius: 100%;
+    padding: 0rem;
+    width: 0rem;
+    height: 0rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-180deg);
+    transition: all 0.5s ease;
+}
+
+button:hover .icon span {
+    background: #ffffff;
+    transform: rotate(0deg);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+}
+
+footer{
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    padding: 2rem 7rem 2rem 7rem;
+    gap: 1rem;
+    display: flex;
+    width: 100%;
+    background-color: #373737;
+    align-items: center;
+    justify-content: space-between;
+}

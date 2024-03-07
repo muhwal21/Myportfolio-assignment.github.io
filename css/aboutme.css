@@ -1,0 +1,67 @@
+.profil {
+    padding-right: 7rem;
+    padding-left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    border-radius: 4rem;
+    
+}
+
+div.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.button a {
+    font-size: 18px;
+    display: flex;
+    font-family: 'Space Mono';
+    font-weight: bold;
+    border-radius: 50px;
+    margin: 14px;
+    border: 2px solid #DAD6CA;
+    height: 34px;
+    width: 156px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a:hover{
+    background-color: #DAD6CA;
+    color: #FF611D;
+}
+.cionlinked1{
+    width: 40px;
+    height: 40px;
+}
+
+.cionlinked1:hover svg path {
+    fill: #FF611D;
+}
+
+.aboutme > img {
+    width: 19vw;
+}
+
+.content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.ivicon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,218 @@
+
+@import "oldnavbar.css";
+@import "aboutme.css";
+@import "experience.css";
+@import "projects.css";
+@import "contact.css";
+@import "skill.css";
+@import "footer.css";
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html body{
+    transition: scroll-behavior 0.5s ease;
+}
+
+body {
+    margin: 0;
+    background: #111111;
+    color: #000000;
+    font-size: 1.6rem;
+    font-family: 'Syne', sans-serif;
+}
+
+h1 {
+    color: #DAD6CA;
+    font-size: 70px;
+    line-height: 1em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+}
+
+h3{
+    font-size: 20px;
+    margin: 0px;
+    color: #DAD6CA;
+}
+
+p {
+    color: #DAD6CA;
+}
+
+a {
+    color: #DAD6CA;
+    text-decoration: none;
+    font-size: 1.3 rem;
+}
+
+span{
+    font-family: sans-serif;
+}
+
+.judul {
+    padding: 4rem 0 1rem 0;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding-top: 10rem;
+}
+
+.judul h1{
+    color: transparent;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgba(108, 108, 108, 0.496);
+}
+
+.judul1{
+    padding: 4rem 0 1rem 0;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    padding-top: 4rem;
+}
+
+.judul1 h1{
+    color: transparent;
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: rgba(108, 108, 108, 0.496);
+}
+
+.pointer{
+    z-index: 2;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff9100;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: left .2s ease, top .2s ease;
+    transition-delay: 1;
+}
+
+/* pointer */
+.pointer.buttonHover{
+    transition: .2s ease;
+    transform: scale(4);
+    background: #ff9100;
+    opacity: .2;
+}
+
+@media screen and (max-width: 750px) {
+    nav > ul {
+        padding: 0;
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    nav ul li{
+        margin-right: 0;
+
+    }
+
+    .judul{
+        padding: 4rem 0 1rem 0;
+        padding-top: 21rem;
+    }
+
+    .judul h1 {
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .judul1{
+        padding: 2rem 0 1rem 0;
+        margin: 0;
+    }
+    
+    .judul1 h1{
+        
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .aboutme{
+        padding: 1rem;
+    }
+
+    
+
+    .aboutme > img {
+        width: 52vw;
+    }
+
+    h1{
+       font-size: 10vw; 
+    }
+
+    p{
+        font-size: 60%
+    }
+
+    .experiencelist {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-end;
+        align-items: flex-start;
+    }
+
+    p.date{
+        text-align: unset;
+    }
+
+    .projects {
+        display: flex;
+        margin-right: 7rem;
+        margin-left: 7rem;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+
+    .projectitem1 img {
+        width: 61vw;
+    }
+
+    .projectitem2 img {
+        width: 61vw;
+    }
+
+    footer  {
+        border-top-right-radius: 4rem;
+        border-top-left-radius: 4rem;
+        padding: 2rem 7rem 2rem 7rem;
+        gap: 1rem;
+        display: flex;
+        width: 100%;
+        background-color: #373737;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .buttonrorate a > h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact{
+        font-size: 1rem;
+    }
+
+    
+}
